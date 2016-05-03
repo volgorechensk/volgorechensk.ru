@@ -1,0 +1,6 @@
+.htaccess
+*.php
+base/
+*php/
+node_modules/
+js/*.gz
