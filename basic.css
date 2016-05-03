@@ -1,0 +1,233 @@
+html,
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: .95em;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+}
+
+.index
+{
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    line-height: 20px;
+
+    position: fixed;
+    z-index: 1000;
+    top: 33px;
+    left: 0;
+
+    padding: 5px 8px;
+
+    color: white;
+    background: #ae2224;
+}
+
+.index a:link,
+.index a:visited
+{
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+
+    color: #fff;
+}
+
+.index a:hover,
+.index a:active
+{
+    font-family: Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+
+    color: #fff;
+}
+
+span.inside
+{
+    line-height: 1.4em;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+    text-decoration: none;
+
+    color: #05c;
+    border-bottom: 1px dotted #05c;
+}
+
+span.inside_warning
+{
+    text-decoration: none;
+
+    color: #ae2224;
+    border-bottom: 1px dotted #ae2224 !important;
+}
+
+span.inside-selected,
+span.noinside
+{
+    line-height: 1.4em;
+
+    cursor: default;
+    text-decoration: none;
+
+    color: #000;
+    border-bottom: 1px solid transparent;
+}
+
+span.inside-selected
+{
+    font-weight: bold;
+}
+
+a:link
+{
+    text-decoration: underline;
+
+    color: #05c;
+}
+
+a:hover
+{
+    text-decoration: none;
+
+    color: #c00;
+}
+
+a.new:link
+{
+    text-decoration: underline;
+
+    color: #c00;
+}
+
+a.new:visited
+{
+    text-decoration: underline;
+
+    color: #c00;
+}
+
+a.new:hover
+{
+    text-decoration: none;
+
+    color: #c00;
+}
+
+a.new:active
+{
+    text-decoration: none;
+
+    color: #c00;
+}
+
+.full-width
+{
+    width: 100%;
+}
+
+.r
+{
+    position: relative;
+}
+
+.a
+{
+    position: absolute;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+
+.mdash
+{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+h1.page-title
+{
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5em;
+
+    position: absolute;
+    top: 27px;
+    left: 165px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    position: relative;
+    z-index: 10;
+
+    width: 100%;
+    height: 74px;
+
+    background: #aaa;
+}
+
+.header h1.page-title
+{
+    height: 50px;
+    padding-right: .5em;
+    padding-left: .5em;
+
+    border: 1px solid #eee;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    background: #fff;
+}
+
+.header h1.page-title_font_small
+{
+    font-size: 1.1em;
+}
+
+.header-action
+{
+    position: absolute;
+    z-index: 20;
+    top: 29px;
+    right: 50px;
+
+    padding: .3em .5em;
+
+    color: #fff;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background: orange;
+    box-shadow: 5px 5px 5px #aaa;
+}
+
+.header-action a:link,
+.header-action a:visited,
+.header-action a:hover,
+.header-action a:active
+{
+    color: #fff;
+}
+
+.header-action .inside
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+.rss-icon
+{
+    margin-left: 7px;
+}
