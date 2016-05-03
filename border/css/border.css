@@ -1,0 +1,308 @@
+html
+{
+    background:    -moz-linear-gradient(top,  #edfcff 0%, #fff 10%, #fff 100%);
+    background: -webkit-linear-gradient(top,  #edfcff 0%,#fff 10%,#fff 100%);
+    background:         linear-gradient(to bottom,  #edfcff 0%,#fff 10%,#fff 100%);
+}
+
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    width: 100%;
+    min-height: 1000px;
+    margin: 0;
+    padding: 0;
+
+    background: url(../images/border.jpg) 0 100px repeat-x;
+}
+
+p
+{
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.border__title
+{
+    font-family: Georgia, serif;
+    font-size: 2.6em;
+    font-weight: normal;
+
+    position: absolute;
+    top: 30px;
+    left: 180px;
+
+    margin: 0;
+    padding: 0;
+
+    color: #333;
+}
+
+.border__remember
+{
+    font-size: 14px;
+    font-style: italic;
+
+    display: block;
+
+    margin-top: 4px;
+
+    color: #333;
+}
+
+.border__actions
+{
+    position: absolute;
+    z-index: 10000;
+    top: 105px;
+    left: 180px;
+}
+
+.border__sorted,
+.border__unsorted,
+.border__add
+{
+    font-size: 1.4em;
+}
+
+.border__unsorted
+{
+    display: none;
+}
+
+.border_sorted .border__sorted
+{
+    display: none;
+}
+
+.border_sorted .border__unsorted
+{
+    display: inline;
+}
+
+.border_sorted .border__messages
+{
+    overflow-y: auto;
+
+    height: auto;
+}
+
+.border__messages
+{
+    position: absolute;
+    top: 150px;
+    left: 0;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    width: 100%;
+    height: 850px;
+}
+
+.border__twit
+{
+    position: absolute;
+    top: 32px;
+    left: 922px;
+
+    display: none;
+
+    width: 84px;
+    height: 85px;
+
+    background: url(../images/twit.png) top left no-repeat;
+}
+
+.border__add
+{
+    margin-right: 1em;
+}
+
+.border__add-form
+{
+    line-height: 1.5em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    padding: 1em;
+
+    white-space: nowrap;
+
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    background: #f5f5f5;
+    box-shadow: 1px 1px 10px #999;
+}
+
+.border__input
+{
+    width: 20em;
+}
+
+.border__ps
+{
+    font-size: 10px;
+    font-style: italic;
+
+    margin: 5px 0 0 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    color: #f77;
+}
+
+.border_sorted .message
+{
+    position: static;
+
+    display: inline-block;
+
+    margin: 3px;
+
+    white-space: normal;
+}
+
+.message
+{
+    font-size: 14px;
+
+    position: absolute;
+
+    padding: .7em 1em;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    border: 1px dotted #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+.message_color_yellow
+{
+    border: 1px solid #efefbf;
+    background: #ffffcf;
+}
+
+.message_color_red
+{
+    border: 1px solid #efafaf;
+    background: #ffbfbf;
+}
+
+.message_color_blue
+{
+    border: 1px solid #bfdeef;
+    background: #cfeeff;
+}
+
+.message_color_green
+{
+    border: 1px solid #bfdef1;
+    background: #cfffd1;
+}
+
+.message_color_orange
+{
+    border: 1px solid #efd2af;
+    background: #ffe2bf;
+}
+
+.message_color_pink
+{
+    border: 1px solid #edcfef;
+    background: #fddfff;
+}
+
+.message_top
+{
+    z-index: 10000 !important;
+}
+
+span.inside
+{
+    font-weight: normal;
+    line-height: 1.5em;
+
+    cursor: pointer;
+
+    color: #0c569c;
+    border-bottom: 1px dotted #0c569c;
+}
+
+span.inside_selected
+{
+    font-weight: bold;
+    line-height: 1.5em;
+
+    cursor: default;
+
+    color: #000;
+    border-bottom: none;
+}
+
+@media all and (max-width: 550px)
+{
+    .border .message
+    {
+        font-size: 13px;
+
+        position: static;
+
+        display: inline-block;
+
+        margin: 3px;
+        padding: .5em .5em;
+
+        white-space: normal;
+    }
+
+    .border__remember
+    {
+        font-size: 8px;
+
+        display: none;
+    }
+
+    .border__title
+    {
+        font-size: 20px;
+
+        margin-top: 8px;
+        left: 110px;
+    }
+
+    .border__actions
+    {
+        left: 10px;
+    }
+
+    .border .border__messages
+    {
+        overflow-y: auto;
+
+        height: auto;
+    }
+
+    .border__sorted,
+    .border__unsorted
+    {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1030px)
+{
+    .border__twit
+    {
+        display: block;
+    }
+}
