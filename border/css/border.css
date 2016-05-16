@@ -295,7 +295,7 @@ span.inside_selected
     .border__sorted,
     .border__unsorted
     {
-        display: none;
+        display: none !important;
     }
 }
 

@@ -78,6 +78,10 @@
             $border.addClass('border_sorted');
         });
 
+        if (window.location.hash === '#sorted') {
+            $sorted.click();
+        }
+
         $unsorted.click(function() {
             $border.removeClass('border_sorted');
         });
